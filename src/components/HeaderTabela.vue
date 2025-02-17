@@ -1,15 +1,17 @@
 
 <script setup lang="ts">
 import { ref, watch } from 'vue';
+
 const search = ref<string>('');
 
 const emit = defineEmits(['filteredValue']);
 
-watch (search,(filterValue(){
-  if(filterValue.length > 4){
-    emit('filteredValue')
-  }
+watch(search,(filteredValue =>{
+
+    emit('filteredValue',filteredValue)
+
 }))
+
 </script>
 <template>
   <div class="container row mb-4 position-relative">
