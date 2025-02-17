@@ -1,9 +1,11 @@
 export default class Aluno{
+  public id:number;
   public nome:string;
   public primeiraNota:number;
   public segundaNota:number;
 
   constructor(){
+    this.id =0;
     this.nome = '';
     this.primeiraNota = 0;
     this.segundaNota = 0;
