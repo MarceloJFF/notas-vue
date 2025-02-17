@@ -35,9 +35,8 @@ Este é o projeto final para obtenção do certificado do curso de Vue.js. O obj
 ## 🛠️ Tecnologias Utilizadas
 - Vue.js
 - Vue Router
-- Vuex (opcional)
 - Axios (para consumo de API fake JSON-server, se necessário)
-- Bootstrap ou TailwindCSS (para estilização)
+- Bootstrap  (para estilização)
 
 ## ▶️ Como Executar o Projeto
 
@@ -63,7 +62,7 @@ npm run dev
 ```
 O projeto estará disponível em `http://localhost:5173` (ou outra porta especificada pelo Vite).
 
-### 4️⃣ (Opcional) Configurando API Fake
+### 4️⃣ Configurando API Fake
 Se desejar usar uma API fake para persistência dos dados, instale o JSON Server:
 ```sh
 npm install -g json-server
