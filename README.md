@@ -1,39 +1,10 @@
-# notas-vue
+Projeto final para obter o certificado
+Parabéns pela sua dedicação, isso significa que você acompanhou o curso e quer testar seus conhecimentos de Vue.js e receber o certificado:
 
-This template should help get you started developing with Vue 3 in Vite.
+Desenvolva um sistema para gerenciar notas escolares, implemente as seguintes funcionalidades:
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Cadastro: O cliente deverá informar o nome do aluno, primeira nota e segunda nota. Valide as informações, o campo nome deve ser preenchido e as notas informadas devem estar entre 0 e 10.
+Listagem: Exiba o nome do aluno, as duas notas, média e situação em uma tabela. Haverá três situações, sendo elas: aprovado(a) com média entre 7 ~ 10, em exame com média entre 5 ~ 6.9 e reprovado(a) com média entre 0 ~ 4.9.
+Filtragem: Será possível filtrar os alunos através do nome.
+Alteração: Será possível alterar o nome e as notas dos alunos.
+Exclusão: Será possível remover os alunos.
