@@ -89,5 +89,5 @@ Se desejar contribuir com melhorias para este projeto, fique à vontade para env
 Este projeto faz parte do desafio final do curso de Vue.js. Complete todas as funcionalidades e obtenha seu certificado!
 
 ---
-Feito com ❤️ por [Seu Nome](https://github.com/seu-usuario).
+Feito com ❤️ por Marcelo Jhones
 
