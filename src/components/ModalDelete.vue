@@ -15,7 +15,7 @@ function deletarAluno(){
       .then(() => {
         console.log("Aluno deletado com sucesso!");
         emit('aluno-deletado', props.alunoSelecionado);
-        close()
+        close();
       })
       .catch((error) => {
         console.error("Erro ao deletar aluno:", error);

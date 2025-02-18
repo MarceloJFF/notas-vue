@@ -31,7 +31,7 @@ function addAluno(){
 
 </script>
 <template>
-    <ModalGeral :isEdit="isEdit" :showModal="showModal"  @close="closeModal" @emitAlunoAdd="emitAlunoAdd" />
+    <ModalGeral :isEdit="isEdit" :showModal="showModal"  @close="closeModal" @emitAlunoAdicionado="emitAlunoAdd" />
   <div class="container row mb-4 justify-content-between">
           <h3 class="col-5">Listagem de Alunos</h3>
           <input v-model="search" type="text" class="col-4">

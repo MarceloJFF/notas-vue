@@ -41,7 +41,7 @@ function updateAlunoSelecionado(aluno: Aluno) {
 function updateAlunoAdicionado(aluno: Aluno) {
   console.log(aluno+ "aluno add")
   if (alunosInfor.value) {
-    alunosInfor.value.push(aluno);
+    alunosInfor.value.push(Object.assign(new Aluno(), aluno));
   }
 }
 function updateAlunoDeletado(aluno: Aluno) {

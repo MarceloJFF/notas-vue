@@ -3,7 +3,6 @@ import ModalGeral from './ModalGeral.vue';
 import type Aluno from '@/model/Aluno';
 import { computed, ref } from 'vue';
 import ModalDelete from './ModalDelete.vue';
-
 const props = defineProps<{
   alunos: Aluno[]
   nome: string,

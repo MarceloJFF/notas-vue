@@ -28,12 +28,6 @@ function close() {
   emit('close');
 }
 
-function emitUpdateAlunoSelecionado(aluno: Aluno){
-  emit('emitUpdateAlunoSelecionado', aluno);
-}
-function emitAlunoAdd(aluno: Aluno){
-  emit('emitAlunoAdicionado', aluno);
-}
 
 function salvar() {
   validacao.value = [];
