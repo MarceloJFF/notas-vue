@@ -38,6 +38,21 @@ function updateAlunoSelecionado(aluno: Aluno) {
   }
 }
 
+function updateAlunoAdicionado(aluno: Aluno) {
+  console.log(aluno+ "aluno add")
+  if (alunosInfor.value) {
+    alunosInfor.value.push(aluno);
+  }
+}
+function updateAlunoDeletado(aluno: Aluno) {
+  if (alunosInfor.value) {
+    const index = alunosInfor.value.findIndex(a => a.id === aluno.id);
+    if (index !== -1) {
+      alunosInfor.value.splice(index, 1);
+    }
+  }
+
+}
 
 
 
@@ -51,11 +66,11 @@ const filterValue = (filteredValue)=>{
   <NavBar />
   <main>
     <section class="container-lg my-4">
-      <HeaderTabela @filteredValue = filterValue />
+      <HeaderTabela @filteredValue = filterValue   @emit-aluno-adicionado="updateAlunoAdicionado"/>
 
       <div v-if="alunosInfor === null">Carregando alunos...</div>
       <div v-else>
-        <TabelaHome :alunos="alunosInfor" :nome="nome" :searchedValue="searchedValue ?? ''" @update-aluno-selecionado="updateAlunoSelecionado" />
+        <TabelaHome :alunos="alunosInfor" :nome="nome" :searchedValue="searchedValue ?? ''" @update-aluno-selecionado="updateAlunoSelecionado" @update-aluno-deletado="updateAlunoDeletado" />
       </div>
     </section>
 
